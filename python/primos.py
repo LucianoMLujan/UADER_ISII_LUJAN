@@ -1,5 +1,10 @@
+import sys
+import datetime
 # prime number calculator: find all primes up to n
-max = int(input("Find primes up to what number? : "))
+try: 
+	max = int(sys.argv[1])
+except:
+	max = int(input("Find primes up to what number? : "))
 primeList = []
 #for loop for checking each number
 for x in range(2, max + 1):
@@ -16,7 +21,10 @@ for x in range(2, max + 1):
 print(primeList)
 #-------------------------------------------------------------
 # prime number calculator: find the first n primes
-count = int(input("Find how many primes?: "))
+try:
+	count = int(sys.argv[2])
+except:
+	count = int(input("Find how many primes?: "))
 primeList = []
 x = 2
 while len(primeList) < count:
