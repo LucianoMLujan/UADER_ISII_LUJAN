@@ -1,5 +1,5 @@
 import sys
-import datetime
+from datetime import datetime
 # prime number calculator: find all primes up to n
 try: 
 	max = int(sys.argv[1])
@@ -19,6 +19,8 @@ for x in range(2, max + 1):
 	if isPrime:
 		primeList.append(x)
 print(primeList)
+print(datetime.now())
+
 #-------------------------------------------------------------
 # prime number calculator: find the first n primes
 try:
@@ -40,3 +42,4 @@ while len(primeList) < count:
 		primeList.append(x)
 	x += 1
 print(primeList)
+print(datetime.now())
