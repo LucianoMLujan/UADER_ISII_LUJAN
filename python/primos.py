@@ -4,7 +4,7 @@ import datetime
 try: 
 	max = int(sys.argv[1])
 except:
-	max = int(input("Find primes up to what number? : "))
+	max = int(input("Hasta que número desea encontrar los primos? : "))
 primeList = []
 #for loop for checking each number
 for x in range(2, max + 1):
@@ -24,7 +24,7 @@ print(primeList)
 try:
 	count = int(sys.argv[2])
 except:
-	count = int(input("Find how many primes?: "))
+	count = int(input("Cuantos números primos desea encontrar?: "))
 primeList = []
 x = 2
 while len(primeList) < count:
